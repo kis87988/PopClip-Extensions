@@ -3,9 +3,6 @@
 PopClip extension to speak the text aloud using the Mac's built-in
 text-to-speech.
 
-Under the hood, the extension uses a TypeScript code snippet to call the macOS
-`say` command with PopClip's `$` shell tag. Requires PopClip 2026.8.1 or later.
-
 ## Usage
 
 Simply select the text and click the Say action in PopClip. To cancel speaking,
