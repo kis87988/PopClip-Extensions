@@ -3,8 +3,8 @@
 PopClip extension to speak the text aloud using the Mac's built-in
 text-to-speech.
 
-Under the hood, the extension uses the `say` command, which is included with
-macOS
+Under the hood, the extension uses a TypeScript code snippet to call the macOS
+`say` command with PopClip's `$` shell tag. Requires PopClip 2026.8.1 or later.
 
 ## Usage
 
@@ -23,8 +23,9 @@ example `Daniel`. (See voice list below.)
 
 ### Rate
 
-To override the system default rate, specify the rate in words per minute, for
-example `150`.
+To override the system default rate, specify a number from 1 to 1000 in words
+per minute, for example `150`. Decimal values are rounded to the nearest whole
+number. Invalid values show an error; leave blank to use the system default.
 
 ## Voice List
 
@@ -226,6 +227,11 @@ This is the current list of voices on my macOS Tahoe system — yours may vary!
 | `Zuzana`                             | cs_CZ  | Ahoj! Já jsem Zuzana.                 |
 
 ## Changelog
+
+### 2026-09-07
+
+- Rewrite as a TypeScript code snippet using the `$` shell tag.
+- Requires PopClip 2026.8.1 (6221) or later.
 
 ### 2025-06-25
 
