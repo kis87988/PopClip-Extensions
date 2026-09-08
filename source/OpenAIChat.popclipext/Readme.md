@@ -121,7 +121,8 @@ Icons:
 
 - 2026-09-08: Combine Model and Custom Model into one setting with an "Other…"
   choice, preserving saved overrides. Refresh the suggested models and set
-  the default to `gpt-5.6-luna`. Requires PopClip 2026.8.1 (6221).
+  the default to `gpt-5.6-luna`. Add a labelled API keys link and a multiline
+  System Message field. Requires PopClip 2026.8.1 (6221).
 - 2025-12-03: Allow full API base path for better compatibility with
   OpenAI-compatible APIs (Gemini, Azure, etc.).
 - 2025-09-19: Change default model to `gpt-5-nano` (currently the cheapest).

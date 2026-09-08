@@ -18,7 +18,7 @@ export const options = [
     label: "API Key",
     type: "secret",
     description:
-      "Obtain an API key from: https://platform.openai.com/account/api-keys",
+      "Obtain an API key from the [API keys page](https://platform.openai.com/account/api-keys).",
   },
   {
     identifier: "model",
@@ -29,12 +29,13 @@ export const options = [
     allowOther: true,
     migrateFrom: "customModel",
     description:
-      "Choose Other… to enter a model name. [Models and pricing](https://developers.openai.com/api/docs/models)",
+      "[Models and pricing](https://developers.openai.com/api/docs/models)",
   },
   {
     identifier: "systemMessage",
     label: "System Message",
     type: "string",
+    multiline: true,
     description:
       "Optional system message to specify the behaviour of the AI assistant.",
   },
